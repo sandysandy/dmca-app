@@ -1,23 +1,40 @@
-## Laravel PHP Framework
+## Laracasts - Laravel 5 - Build Your First App
+https://laracasts.com/series/build-your-first-app-in-laravel
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## About This Series
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Made your way through Laravel 5 Fundamentals, and now feel ready to take the next step? Let's build our first little app together, one step at a time! We'll tackle a small, but useful tool that I require for Laracasts. This will give us some nice seeds to discuss authentication, forms, Eloquent, and more!
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+# You Will Learn About
 
-## Official Documentation
+Building an app from scratch
+The fundamentals of Laravel
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+----------------------------------
 
-## Contributing
+# Episode 1 - What We'll Build 
+Published on February 16th, 2015 • Intermediate
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Before we dive into the code, let me give you a quick tour of what we're planning to build. Don't worry; it's nothing too complex.
 
-### License
+# Episode 2 - Preparing a Custom Domain  
+Published on February 16th, 2015 • Intermediate
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+We'll be using Vagrant and Laravel Homestead in this series. Let's begin by preparing a custom domain for our local app.
+
+# Episode 3 - Initial Routing and View Setup  
+Published on February 17th, 2015 • Intermediate
+
+Next, let's work on some basic routing for our app, while also prepping our main master page.
+
+# Episode 4 - Database Setup and Authentication  
+Published on February 17th, 2015 • Intermediate
+
+An SQLite database should suffice for this little project. So let's setup the necessary configuration for this. Additionally, we'll ensure that the authentication layer for our app is working, as expected.
+
+# Episode 5 - Notices  
+Published on February 18th, 2015 • Intermediate
+
+Yay - we get to start building the form that allows users of our app to prepare and deliver DMCA take-down requests to these various content providers.
+
+
