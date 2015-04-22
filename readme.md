@@ -37,4 +37,7 @@ Published on February 18th, 2015 • Intermediate
 
 Yay - we get to start building the form that allows users of our app to prepare and deliver DMCA take-down requests to these various content providers.
 
+# Episode 6 - A Touch of Styling  
+Published on February 18th, 2015 • Intermediate
 
+We're not overly interested in design for this application, but, nonetheless, even though we're developers, let's at least take a moment or two to tweak the design, while setting up Laravel Elixir.
