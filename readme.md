@@ -41,3 +41,8 @@ Yay - we get to start building the form that allows users of our app to prepare 
 Published on February 18th, 2015 • Intermediate
 
 We're not overly interested in design for this application, but, nonetheless, even though we're developers, let's at least take a moment or two to tweak the design, while setting up Laravel Elixir.
+
+# Episode 7 - Content Providers  
+Published on February 19th, 2015 • Intermediate
+
+If the plan is to fire off these emails to various content providers (like YouTube, Vimeo, and Viddler), then we should go ahead and set up the appropriate table and Eloquent model.

@@ -3,6 +3,8 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Provider;
+
 use Illuminate\Http\Request;
 
 class NoticesController extends Controller {
@@ -10,7 +12,7 @@ class NoticesController extends Controller {
 	/**
 		* Create a new notices controller instance
 	**/
-	public function __construct()
+	public function __construct() 
 	{
 		$this->middleware('auth');
 	}
@@ -21,7 +23,7 @@ class NoticesController extends Controller {
 		* @return string
 	**/
 
-	public function index()
+	public function index() 
 	{
 		return 'All notices';
 	}
@@ -31,12 +33,16 @@ class NoticesController extends Controller {
 		*
 		* @return \Response
 	**/
-	public function create()
+	public function create() 
 	{
-		// get list of providers
+		$providers = Provider::lists('name', 'id');
 
-		// load a view to create a new notice
-		return view('notices.create');
+		return view('notices.create', compact('providers'));
+	}
+
+	public function confirm(Requests\PrepareNoticeRequest $request) 
+	{
+		return $request->all();
 	}
 
 }
