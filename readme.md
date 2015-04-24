@@ -46,3 +46,8 @@ We're not overly interested in design for this application, but, nonetheless, ev
 Published on February 19th, 2015 • Intermediate
 
 If the plan is to fire off these emails to various content providers (like YouTube, Vimeo, and Viddler), then we should go ahead and set up the appropriate table and Eloquent model.
+
+# Episode 8 - User Confirmation  
+Published on February 20th, 2015 • Intermediate
+
+We're almost ready to deliver these dang DMCA requests! But, first, I want to give the user the ability to preview the email that will be sent. This way, should they need to, they can modify the message, as needed.
