@@ -51,3 +51,8 @@ If the plan is to fire off these emails to various content providers (like YouTu
 Published on February 20th, 2015 • Intermediate
 
 We're almost ready to deliver these dang DMCA requests! But, first, I want to give the user the ability to preview the email that will be sent. This way, should they need to, they can modify the message, as needed.
+
+# Episode 9 - Storing DMCA Notices  
+Published on February 23rd, 2015 • Intermediate
+
+So we have all the information that we require from the user. Let's now persist this data to a new "notices" table, so that the user may track the take-downs that they've fired off.
