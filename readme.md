@@ -61,3 +61,8 @@ So we have all the information that we require from the user. Let's now persist 
 Published on February 24th, 2015 • Intermediate
 
 Well, it's time to actually fire off these notifications to YouTube, Vimeo, etc. Let's review our options in this episode.
+
+#Episode 11 - Hooking into Mandrill  
+Published on February 26th, 2015 • Intermediate
+
+One wonderful thing about Laravel is that it includes a number of drivers for its various components. Mail is no different. Let's use this lesson to setup Mandrill for our application. It's so easy!
