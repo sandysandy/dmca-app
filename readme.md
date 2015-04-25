@@ -66,3 +66,8 @@ Well, it's time to actually fire off these notifications to YouTube, Vimeo, etc.
 Published on February 26th, 2015 • Intermediate
 
 One wonderful thing about Laravel is that it includes a number of drivers for its various components. Mail is no different. Let's use this lesson to setup Mandrill for our application. It's so easy!
+
+#Episode 12 - Tracking Notices  
+Published on February 27th, 2015 • Intermediate
+
+So far, the main "notices" overview page is simply returning JSON. We clearly don't want that, so let's provide a nice table display, sot that the user may track all of the take-down requests that they've filed.
