@@ -56,3 +56,8 @@ We're almost ready to deliver these dang DMCA requests! But, first, I want to gi
 Published on February 23rd, 2015 • Intermediate
 
 So we have all the information that we require from the user. Let's now persist this data to a new "notices" table, so that the user may track the take-downs that they've fired off.
+
+# Episode 10 - Delivery  
+Published on February 24th, 2015 • Intermediate
+
+Well, it's time to actually fire off these notifications to YouTube, Vimeo, etc. Let's review our options in this episode.
