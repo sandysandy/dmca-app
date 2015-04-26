@@ -14,17 +14,16 @@
 		</thead>
 
 		<tbody>
-			@foreach ($notices->where('content_removed', 0, false) as $notice)
+			@foreach ($notices as $notice)
 				<tr>
 					<td>{{ $notice->infringing_title }}</td>
 					<td>{!! link_to($notice->infringing_link) !!}</td>
 					<td>{!! link_to($notice->original_link) !!}</td>
 					<td>{{ $notice->created_at->diffForHumans() }}</td>
 					<td>
-						{!! Form::open(['method' => 'PATCH', 'url' => 'notices/' . $notice->id]) !!}					
+						{!! Form::open(['data-remote', 'method' => 'PATCH', 'url' => 'notices/' . $notice->id]) !!}					
 							<div class="form-group">
-								{!! Form::checkbox('content_removed', $notice->content_removed, $notice->content_removed) !!}
-								{!! Form::submit('Submit') !!}
+								{!! Form::checkbox('content_removed', $notice->content_removed, $notice->content_removed, ['data-click-submit-form']) !!}
 							</div>
 						{!! Form::close() !!}
 					</td>					

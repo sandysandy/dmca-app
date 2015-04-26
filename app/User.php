@@ -39,7 +39,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	public function notices()
 	{
-		return $this->hasMany('App\Notice')->latest();
+		return $this->hasMany('App\Notice')->latest()->where('content_removed', 0);
 	}
 
 }
