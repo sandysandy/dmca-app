@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Requests\PrepareNoticeRequest;
 use App\Notice;
 use App\Provider;
+use Flash;
 use Mail;
 use Auth;
 use Illuminate\Contracts\Auth\Guard;
@@ -72,11 +73,13 @@ class NoticesController extends Controller {
 	{
 		$notice = $this->createNotice($request);
 
-		Mail::queue('emails.dmca', compact('notice'), function($message) use ($notice) {
+		Mail::queue(['text' => 'emails.dmca'], compact('notice'), function($message) use ($notice) {
 			$message->from($notice->getOwnerEmail())
 				->to($notice->getRecipientEmail())
 				->subject('DMCA Notice');
 		});
+
+		Flash::success('Your DMCA notice has been delivered!');
 
 		return redirect('notices');
 	}
@@ -108,5 +111,16 @@ class NoticesController extends Controller {
 		$notice =  $this->user->notices()->create($notice);
 		
 		return $notice;
-	}	
+	}
+
+	public function update($noticeId, Request $request)
+	{
+		$isRemoved = $request->has('content_removed');
+
+		Notice::FindOrFail($noticeId)
+			->update(['content_removed' => $isRemoved]);
+
+		return redirect()->back();
+	}
+	
 }

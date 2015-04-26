@@ -14,16 +14,17 @@
 		</thead>
 
 		<tbody>
-			@foreach ($notices as $notice)
+			@foreach ($notices->where('content_removed', 0, false) as $notice)
 				<tr>
 					<td>{{ $notice->infringing_title }}</td>
 					<td>{!! link_to($notice->infringing_link) !!}</td>
 					<td>{!! link_to($notice->original_link) !!}</td>
 					<td>{{ $notice->created_at->diffForHumans() }}</td>
 					<td>
-						{!! Form::open() !!}					
+						{!! Form::open(['method' => 'PATCH', 'url' => 'notices/' . $notice->id]) !!}					
 							<div class="form-group">
 								{!! Form::checkbox('content_removed', $notice->content_removed, $notice->content_removed) !!}
+								{!! Form::submit('Submit') !!}
 							</div>
 						{!! Form::close() !!}
 					</td>					
@@ -31,4 +32,7 @@
 			@endforeach
 		</tbody>
 	</table>
+	@unless(count($notices))
+		<p class="text-center">You haven't sent any DMCA notices yet!</p>
+	@endunless
 @endsection

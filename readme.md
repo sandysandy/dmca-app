@@ -71,3 +71,10 @@ One wonderful thing about Laravel is that it includes a number of drivers for it
 Published on February 27th, 2015 • Intermediate
 
 So far, the main "notices" overview page is simply returning JSON. We clearly don't want that, so let's provide a nice table display, sot that the user may track all of the take-down requests that they've filed.
+
+#Episode 12 - Everything Else 
+Published on March 2nd, 2015 • Intermediate
+
+It's the final episode of this series, so we have a bunch to do! We'll begin by working on various loose ends. Toward the end of the episode, we'll take a break from our PHP, and write some JavaScript to allow for AJAX form submissions and such.
+
+Thanks for coming along for the ride! Feel free to take it from here, and add more functionality.
